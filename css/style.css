@@ -417,3 +417,118 @@ fieldset legend {
   border: none;
 }
 /* Contact Page Style End */
+/* Base styles for all elements */
+* {
+  box-sizing: border-box; /* Added for better responsiveness */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .navbar-menu {
+    flex-direction: column; /* Stack menu items */
+  }
+
+  .logo {
+    width: 100px; /* Adjust logo size */
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns on medium screens */
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr; /* Change to 1 column on medium screens */
+  }
+
+  .food-menu-img {
+    width: 40%; /* Increase food image size */
+  }
+
+  .food-menu-desc {
+    width: 55%; /* Adjust food description width */
+  }
+
+  .food-menu-desc .btn-primary {
+    margin-top: 10px; /* Reduce margin */
+  }
+
+  .btn-primary {
+    width: 100%; /* Full width button */
+  }
+
+  .footer .grid-3 {
+    grid-template-columns: 1fr; /* Change footer to 1 column */
+  }
+
+  .social ul li {
+    display: block; /* Stack social links */
+  }
+}
+
+@media (max-width: 768px) {
+  .food-search input[type="search"] {
+    width: 100%; /* Full width search input */
+    margin-right: 0; /* Remove negative margin */
+    margin-bottom: 10px; /* Add margin below */
+  }
+
+  .food-search .btn-primary {
+    width: 100%; /* Full width button */
+  }
+
+  .cart-content {
+    width: 90%; /* Adjust cart width */
+    right: 5%; /* Center cart */
+  }
+
+  .food-price,
+  .food-details,
+  .food-menu-desc h4 {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .img-responsive {
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-menu {
+    padding: 5px 0; /* Reduce padding */
+  }
+
+  .logo {
+    width: 80px; /* Smaller logo */
+  }
+
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr; /* Stack all items */
+  }
+
+  .food-menu {
+    padding: 30px 0; /* Less padding */
+  }
+
+  .float-container {
+    height: auto; /* Allow height to adjust */
+  }
+
+  .contact,
+  .login {
+    padding: 20px 0; /* Less padding on contact/login */
+  }
+
+  .order .tbl-full img {
+    width: 25px; /* Smaller images */
+    height: 25px; /* Smaller images */
+  }
+
+  .form {
+    width: 90%; /* More width on mobile */
+  }
+
+  .form input[type="submit"] {
+    width: 100%; /* Full width button */
+  }
+}
